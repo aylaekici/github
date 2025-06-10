@@ -1,0 +1,155 @@
+.Main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+  &-about {
+    margin-top: 20px;
+    img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+    }
+    &-title {
+      margin-top: 30px;
+
+      h3 {
+        padding-bottom: 10px;
+      }
+      h4 {
+        padding-bottom: 30px;
+      }
+      button {
+        width: 100px;
+        height: 36px;
+        border: 1px solid rgba(27, 31, 35, 0.2);
+        background: none;
+        background-color: #eff3f6;
+        background-image: linear-gradient(-180deg, #fafbfc, #eff3f6, 90%);
+        border-radius: 3px;
+        transition: all 0.3s ease;
+      }
+      button:hover {
+        scale: 0.9;
+        background-color: black;
+        color: #fff;
+      }
+    }
+
+    &-dsc {
+      margin-top: 16px;
+    }
+  }
+
+  &-projects {
+    width: 100%;
+    margin-top: 40px;
+   
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+     
+      border-bottom: 1px solid gray;
+      
+
+      a {
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #586069;
+        font-weight: 500;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        scale: 1.1;
+        font-weight: bold;
+      }
+    }
+    .section {
+      margin-top: 20px;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #586069;
+      }
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 20px;
+    }
+
+    &-bar {
+      
+      margin-top: 20px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 400px;
+      height: 80px;
+      position: relative;
+
+      .up {
+        display: flex;
+
+        a{
+          text-decoration: none;
+          margin-left: 5px;
+        }
+        .right {
+          svg {
+            position: absolute;
+            right: 10px;
+          }
+          
+        }
+      }
+      .down {
+        margin-top: 40px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+
+        span {
+          background-color: #563d7c ;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+
+        p{
+          font-size: 12px;
+          margin-left: 5px;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1100px){
+ .Main-projects-links .repository, .projects, .stars, .followers, .following{
+    display: none;
+  }
+   section a{
+    display: none;
+   }
+   .Main{
+    margin-left: 5rem;
+   }
+}
+
+@media (max-width:796px){
+  .Main-projects-bar{
+  
+  width: 300px;
+  }
+}
